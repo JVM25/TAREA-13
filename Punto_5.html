@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_5" content="Ejercicios de practica React">
+    <title>Punto 5</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Pagina inicial de Juan Tuesta",
+  paragraph_1: "Bienvenidos a mi pagina personal. Soy un alumno de la universidad Deusto y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra información de interes.",
+  subt_1: "Enlaces favoritos:",
+  paragraph_3: "Paginas personales",
+  paragraph_4: "Paginas de referencia",
+  paragraph_5: "Portales",
+  paragraph_6: "Publicaciones",
+
+  subt_2: "Paginas personales",
+  paragraph_7: "Documentalistas",
+  paragraph_8: ["Charkes F. Golfarb",<br></br>,"Luo Burnard",<br></br>,"Tim Berners-Lee"],
+  paragraph_9: "Historiadores",
+  paragraph_10: "Lingüistas",
+  paragraph_11: "Traductores",
+
+  subt_3: "Paginas de referencia",
+  paragraph_12: "Bibliotecas universitarias",
+  paragraph_13: "Centros de documentación",
+  paragraph_14: "Museos de arte contenporáneo",
+  paragraph_15: "Medios de comunicación",
+
+  subt_4: "Portales",
+  paragraph_16: "Inicia",
+  paragraph_17: "Télepolis",
+  paragraph_18: "Ciudades",
+  paragraph_19: "Terra",
+
+  subt_5: "Publicaciones",
+  paragraph_20: "Ciberp@is",
+  paragraph_21: "Diario Tecnologias de la Información",
+  paragraph_22: "The Standard",
+  paragraph_23: "Infoworld",
+  paragraph_24: "Wired",
+
+  paragraph_25: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const subt_x = <h2><b>{data.subt_1}</b></h2>;
+const paragraph_3x = <li><a href='https://www.webhostingsecretrevealed.net/es/blog/web-design/20-best-personal-websites-in-2013/' target='_blank'>{data.paragraph_3}</a></li>;
+const paragraph_4x = <li>{data.paragraph_4}</li>;
+const paragraph_5x = <li>{data.paragraph_5}</li>;
+const paragraph_6x = <li>{data.paragraph_6}</li>;
+
+const subt_2x = <h2><b>{data.subt_2}</b></h2>;;
+const paragraph_7x = <li>{data.paragraph_7}</li>;
+const paragraph_8x = <ul>{data.paragraph_8}</ul>;
+const paragraph_9x = <li>{data.paragraph_9}</li>;
+const paragraph_10x = <li>{data.paragraph_10}</li>;
+const paragraph_11x = <li>{data.paragraph_11}</li>;
+
+const subt_3x = <h2><b>{data.subt_3}</b></h2>;;
+const paragraph_12x = <li>{data.paragraph_12}</li>;
+const paragraph_13x = <li>{data.paragraph_13}</li>;
+const paragraph_14x = <li>{data.paragraph_14}</li>;
+const paragraph_15x = <li>{data.paragraph_15}</li>;
+
+const subt_4x = <h2><b>{data.subt_4}</b></h2>;;
+const paragraph_16x = <li>{data.paragraph_16}</li>;
+const paragraph_17x = <li>{data.paragraph_17}</li>;
+const paragraph_18x = <li>{data.paragraph_18}</li>;
+const paragraph_19x = <li>{data.paragraph_19}</li>;
+
+const subt_5x = <h2><b>{data.subt_5}</b></h2>;;
+const paragraph_20x = <li>{data.paragraph_20}</li>;
+const paragraph_21x = <li>{data.paragraph_21}</li>;
+const paragraph_22x = <li>{data.paragraph_22}</li>;
+const paragraph_23x = <li>{data.paragraph_23}</li>;
+const paragraph_24x = <li>{data.paragraph_24}</li>;
+
+const paragraph_25x = <em>{data.paragraph_25}</em>;
+
+
+const element = (
+  <div>
+    {title_x}
+    {paragraph_x}
+    {subt_x}
+    <ol>
+      {paragraph_3x}
+      {paragraph_4x}
+      {paragraph_5x}
+      {paragraph_6x}
+    </ol>
+    <hr></hr>
+    {subt_2x}
+    <ol>
+      {paragraph_7x}
+      {paragraph_8x}
+      {paragraph_9x}
+      {paragraph_10x}
+    </ol>
+    <hr></hr>
+    {subt_3x}
+    <ol>
+      {paragraph_12x}
+      {paragraph_13x}
+      {paragraph_14x}
+      {paragraph_15x}
+    </ol>
+    <hr></hr>
+    {subt_4x}
+    <ol>
+      {paragraph_16x}
+      {paragraph_17x}
+      {paragraph_18x}
+      {paragraph_19x}
+    </ol>
+    <hr></hr>
+    {subt_5x}
+    <ol>
+      {paragraph_20x}
+      {paragraph_21x}
+      {paragraph_22x}
+      {paragraph_23x}
+      {paragraph_24x}
+    </ol>
+    {paragraph_25x}
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

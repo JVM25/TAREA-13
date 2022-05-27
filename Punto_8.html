@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_8" content="Ejercicios de practica React">
+    <title>Punto 8</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+function images(src, height, width) {
+    var a = document.createElement("img");
+    a.src = src;
+    a.height = height;
+    a.width = width;
+    document.body.appendChild(a);
+  }
+
+const data = {
+  title_1: "Tu concierto",
+  paragraph_1: "Bienvenido a este blog de conciertos...",
+
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const ima1 = <p>{images('Pics/pic2.png',50,125)}</p>;
+const ima2 = <p>{images('Pics/pic3.jpeg',200,300)}</p>;
+
+
+const element = (
+  <div>
+    {ima1}
+    {ima2}
+    {title_x}
+    {paragraph_x}
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

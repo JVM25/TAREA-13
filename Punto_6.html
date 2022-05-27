@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_6" content="Ejercicios de practica React">
+    <title>Punto 6</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "El Noticiero Next University",
+  subt_1: "Programas de Tecnologia",
+  title_2: "Desarrollador Web",
+  paragraph_1: [<em><strong>Next University</strong></em>," lanza su programa de formación ",<strong>"Desarrollador Web"</strong>," con la finalidad de capacitar a personas en las",<br></br>,"tendencias actuales sobre tecnologias, en el caso de desarrollo web, se basa temas relacionados a la",<br></br>,"implementación de Front-End con tecnologias y Frameworks, tales como: " ,<em>HTML5, CSS, JavaScript, Boostrap, entre otros.</em>, ],
+
+  title_3: "Android",
+  paragraph_2: [<em><strong>Next University</strong></em>," te ofrecemos el programa  ",<strong>Android</strong>," que te da las herramientas necesarias para diseñar e implementar aplicaciones Android",<br></br>,"para dispositivos móviles, partiendo de un conocimiento básico de ",<em>Java,</em>," utilizando el entorno de desarrollo ",<em>Android Studio.</em>,<br></br>," Aprenderas los aspectos fundamentales para crear aplicaciones Android interactivas, dinamicas y exitosas utilizando tecnicas para el manejo de los recursos,",<br></br>,"datos, segundos planos,localización, sensores, animaciones, gráficos, multimedia y monetización."],
+
+  subt_2: "Programa de Negocio",
+  title_4: "Mercadeo Digital",
+  paragraph_3: [<em><strong>Next University</strong></em>," coloca a tu disposición de programa de  ",<strong>"Mercadeo Digital"</strong>," Sabias que... Mercadeo Digital o Digital Marketing",<br></br>,"es mucho mas que hacer y publicar anuncios. Se trata del consumidor y la estrategia de negocio. Estos son los puntos de partida",<br></br>,"para que cualquier acción de mercadeo digital  " ,<em>sea exitosa y optimice la inversion.</em>," Este certificado, es un programa completo y práctico,",<br></br>,"que permite entender al consumidor, la industria, la competencia y los retos del negocio propio; para crear e implementar estrategias a",<br></br>,"la medida, en diferentes plataformas y medios digitales. Por supuesto, monitoreando los resultados para tomar decisiones en tiempo real."],
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const subt_x = <h2><b>{data.subt_1}</b></h2>;
+const title_2x = <h3>{data.title_2}</h3>;
+const paragraph_1x = <p>{data.paragraph_1}</p>;
+const title_3x = <h3>{data.title_3}</h3>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const subt_2x = <h1><b>{data.subt_2}</b></h1>;
+const title_4x = <h3>{data.title_4}</h3>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+
+
+const element = (
+  <div>
+    {title_x}
+    {subt_x}
+    {title_2x}
+    {paragraph_1x}
+    {title_3x}
+    {paragraph_2x}
+    {subt_2x}
+    {title_4x}
+    {paragraph_3x}
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

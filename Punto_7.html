@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_7" content="Ejercicios de practica React">
+    <title>Punto 7</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Destinos Turisticos",
+  subt_1: "America",
+  paragraph_1: "Argentina",
+  paragraph_2: "Buenos Aires",
+  paragraph_3: "Bariloche",
+
+  paragraph_4: "Brasil",
+  paragraph_5: "Rio de Janeiro",
+  paragraph_6: "Brasilia",
+
+  paragraph_7: "Chile",
+  paragraph_8: "Santiago",
+  paragraph_9: "Valparaiso",
+
+  paragraph_10: "Colombia",
+  paragraph_11: "Bogotá",
+  paragraph_12: "Cartagena de Indias",
+
+  paragraph_13: "Estados Unidos",
+  paragraph_14: "New York",
+  paragraph_15: "San Francisco",
+
+  paragraph_16: "México",
+  paragraph_17: "Cancún",
+  paragraph_18: "Acapulco",
+
+  paragraph_19: "Perú",
+  paragraph_20: "lima",
+  paragraph_21: "Cuzco",
+
+  paragraph_22: "Venezuela",
+  paragraph_23: "Margarita",
+  paragraph_24: "Mérida",
+
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const subt_x = <h2>{data.subt_1}</h2>;
+const paragraph_1x = <li><b>{data.paragraph_1}</b></li>;
+const paragraph_2x = <li>{data.paragraph_2}</li>;
+const paragraph_3x = <li>{data.paragraph_3}</li>;
+
+const paragraph_4x = <li><b>{data.paragraph_4}</b></li>;
+const paragraph_5x = <li>{data.paragraph_5}</li>;
+const paragraph_6x = <li>{data.paragraph_6}</li>;
+
+const paragraph_7x = <li><b>{data.paragraph_7}</b></li>;
+const paragraph_8x = <li>{data.paragraph_8}</li>;
+const paragraph_9x = <li>{data.paragraph_9}</li>;
+
+const paragraph_10x = <li><b>{data.paragraph_10}</b></li>;
+const paragraph_11x = <li>{data.paragraph_11}</li>;
+const paragraph_12x = <li>{data.paragraph_12}</li>;
+
+const paragraph_13x = <li><b>{data.paragraph_13}</b></li>;
+const paragraph_14x = <li>{data.paragraph_14}</li>;
+const paragraph_15x = <li>{data.paragraph_15}</li>;
+
+const paragraph_16x = <li><b>{data.paragraph_16}</b></li>;
+const paragraph_17x = <li>{data.paragraph_17}</li>;
+const paragraph_18x = <li>{data.paragraph_18}</li>;
+
+const paragraph_19x = <li><b>{data.paragraph_19}</b></li>;
+const paragraph_20x = <li>{data.paragraph_20}</li>;
+const paragraph_21x = <li>{data.paragraph_21}</li>;
+
+const paragraph_22x = <li><b>{data.paragraph_22}</b></li>;
+const paragraph_23x = <li>{data.paragraph_23}</li>;
+const paragraph_24x = <li>{data.paragraph_24}</li>;
+
+const element = (
+  <div>
+    {title_x}
+    {subt_x}
+    <ol>
+    {paragraph_1x}
+      <ol>
+      {paragraph_2x} 
+      {paragraph_3x} 
+      </ol>
+    {paragraph_4x}
+      <ol>
+      {paragraph_5x} 
+      {paragraph_6x} 
+      </ol>
+    {paragraph_7x}
+      <ol>
+      {paragraph_8x} 
+      {paragraph_9x} 
+      </ol>
+    {paragraph_10x}
+      <ol>
+      {paragraph_11x} 
+      {paragraph_12x} 
+      </ol>
+    {paragraph_13x}
+      <ol>
+      {paragraph_14x} 
+      {paragraph_15x} 
+      </ol>
+    {paragraph_16x}
+      <ol>
+      {paragraph_17x} 
+      {paragraph_18x} 
+      </ol>
+    {paragraph_19x}
+      <ol>
+      {paragraph_20x} 
+      {paragraph_21x} 
+      </ol>
+    {paragraph_22x}
+      <ol>
+      {paragraph_23x} 
+      {paragraph_24x} 
+      </ol>
+    </ol>
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

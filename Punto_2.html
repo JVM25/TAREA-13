@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_2" content="Ejercicios de practica React">
+    <title>Punto 2</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Pagina inicial de Juan Tuesta",
+  paragraph_1: "Bienvenidos a mi pagina personal. Soy un alumno de la universidad Deusto y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra información de interes.",
+  paragraph_2: "Enlaces favoritos:",
+  paragraph_3: "Google",
+  paragraph_4: "Internet",
+  paragraph_5: "Aldea Global",
+  paragraph_6: "Manual de HTML",
+  paragraph_7: "Juan Tuesta, Universidad de Deusto, marzo 2002",
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <h2><b>{data.paragraph_2}</b></h2>;
+const paragraph_3x = <li>{data.paragraph_3}</li>;
+const paragraph_4x = <li>{data.paragraph_4}</li>;
+const paragraph_5x = <li>{data.paragraph_5}</li>;
+const paragraph_6x = <li>{data.paragraph_6}</li>;
+const paragraph_7x = <em>{data.paragraph_7}</em>;
+
+const element = (
+  <div>
+    {title_x}
+    {paragraph_x}
+    {paragraph_2x}
+    <ol>
+    {paragraph_3x}
+    {paragraph_4x}
+    {paragraph_5x}
+    {paragraph_6x}
+    </ol>
+    {paragraph_7x}
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

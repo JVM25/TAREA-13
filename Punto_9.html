@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Punto_9" content="Ejercicios de practica React">
+    <title>Punto 9</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+function genera_tabla() {
+
+  var body = document.getElementsByTagName("body")[0];
+
+  var tabla   = document.createElement("table");
+  var tblBody = document.createElement("tbody");
+
+  for (var i = 0; i < 2; i++) {
+    // Crea las hileras de la tabla
+    var hilera = document.createElement("tr");
+
+    for (var j = 0; j < 2; j++) {
+      // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+      // texto sea el contenido de <td>, ubica el elemento <td> al final
+      // de la hilera de la tabla
+      var celda = document.createElement("td");
+      var textoCelda = document.createTextNode("celda en la hilera "+i+", columna "+j);
+      celda.appendChild(textoCelda);
+      hilera.appendChild(celda);
+    }
+
+    tblBody.appendChild(hilera);
+  }
+
+  tabla.appendChild(tblBody);
+  body.appendChild(tabla);
+  tabla.setAttribute("border", "2");
+}
+
+const data = {
+  title_1: "Cartelera de vuelos - Aeropuerto el mirador",
+  subt_1: "Llegadas",
+
+  word_1: "Aerolinea",
+  word_2: "Nro. vuelo",
+  word_3: "Estatus",
+  word_4: "Hora estimada",
+  word_5: "Puerta",
+
+  word_6: "AIRAN",
+  word_7: "355",
+  word_8: "ATERRIZO",
+  word_9: "2:45PM",
+  word_10: "3",
+
+  word_11: "VIAJAR",
+  word_12: "556",
+  word_13: "RETARDADO",
+  word_14: "2:35PM",
+  word_15: "6",
+
+  word_16: "AEROVUELO",
+  word_17: "1234",
+  word_18: "EN VUELO",
+  word_19: "3:45PM",
+  word_20: "8",
+
+  subt_2: "Salidad",
+
+  word_21: "AIRAN",
+  word_22: "355",
+  word_23: "EMBARCADO",
+  word_24: "2:15PM",
+  word_25: "1",
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const subt_x = <h2>{data.subt_1}</h2>;
+const word_x = <p>{data.word_1}</p>;
+const word_2x = <p>{data.word_2}</p>;
+const word_3x = <p>{data.word_3}</p>;
+const word_4x = <p>{data.word_4}</p>;
+const word_5x = <p>{data.word_5}</p>;
+
+const word_6x = <p>{data.word_6}</p>;
+const word_7x = <p>{data.word_7}</p>;
+const word_8x = <p>{data.word_8}</p>;
+const word_9x = <p>{data.word_9}</p>;
+const word_10x = <p>{data.word_10}</p>;
+
+const word_11x = <p>{data.word_11}</p>;
+const word_12x = <p>{data.word_12}</p>;
+const word_13x = <p>{data.word_13}</p>;
+const word_14x = <p>{data.word_14}</p>;
+const word_15x = <p>{data.word_15}</p>;
+
+const word_16x = <p>{data.word_16}</p>;
+const word_17x = <p>{data.word_17}</p>;
+const word_18x = <p>{data.word_18}</p>;
+const word_19x = <p>{data.word_19}</p>;
+const word_20x = <p>{data.word_20}</p>;
+
+const subt_2x = <h2>{data.subt_2}</h2>;
+
+const word_21x = <p>{data.word_16}</p>;
+const word_22x = <p>{data.word_17}</p>;
+const word_23x = <p>{data.word_18}</p>;
+const word_24x = <p>{data.word_19}</p>;
+const word_25x = <p>{data.word_20}</p>;
+
+const element = (
+  <div>
+    {title_x}
+    {subt_x}
+      <table border="2">
+        <tbody>
+          <tr>
+          <td>{word_x}</td>
+          <td>{word_2x}</td>
+          <td>{word_3x}</td>
+          <td>{word_4x}</td>
+          <td>{word_5x}</td>
+          </tr>
+
+          <tr>
+          <td>{word_6x}</td>
+          <td>{word_7x}</td>
+          <td>{word_8x}</td>
+          <td>{word_9x}</td>
+          <td>{word_10x}</td>
+          </tr>
+
+          <tr>
+          <td>{word_11x}</td>
+          <td>{word_12x}</td>
+          <td>{word_13x}</td>
+          <td>{word_14x}</td>
+          <td>{word_15x}</td>
+          </tr>
+
+          <tr>
+          <td>{word_16x}</td>
+          <td>{word_17x}</td>
+          <td>{word_18x}</td>
+          <td>{word_19x}</td>
+          <td>{word_20x}</td>
+          </tr>
+        </tbody>
+      </table>
+
+   {subt_2x}
+      <table border="2">
+        <tbody>
+          <tr>
+          <td>{word_x}</td>
+          <td>{word_2x}</td>
+          <td>{word_3x}</td>
+          <td>{word_4x}</td>
+          <td>{word_5x}</td>
+          </tr>
+
+          <tr>
+          <td>{word_21x}</td>
+          <td>{word_22x}</td>
+          <td>{word_23x}</td>
+          <td>{word_24x}</td>
+          <td>{word_25x}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>
