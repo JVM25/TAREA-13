@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta name="Punto_1" content="Ejercicios de practica React">
+    <title>Punto 1</title>
   </head>
   <body>
-    <div id="root"> </div>
+    <div id="root">
 
+    </div>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -15,15 +16,13 @@
 const data = {
   title_1: "Plato de la semana",
   title_2: "Berenjenas fritas",
-  paragraph_1: "Comensales 4 personas",
+  paragraph_1: "Comensales: 4 personas",
   paragraph_2: "Tiempo de preparación: 10 minutos",
-  paragraph_3: "Tiempo de cocción: 12 minutos",
-  title_3: "Ingredientes:",
-  list_x: "4 berenjenas",
-  list_x1: "Sal",
-  paragraph_6: "Pimienta",
-  paragraph_7: "4 cucharadas de harina y aceite",
-
+  paragraph_3: "Tiempo de cocción: 10 minutos",
+  paragraph_4: "Ingredientes:",
+  paragraph_5: ["4 berenjenas.",<br></br>,"Sal.",<br></br>,"Pimienta.",<br></br>,"4 cucharadas de harina y aceite."],
+  paragraph_6: "Preparación:",
+  paragraph_7: ["Lavar las berenjenas.",<br></br>,"Cortarlas en rodajas.",<br></br>,"Espolvorearles sal.",<br></br>,"Dejar que suelten agua durante 30 minutos.",<br></br>,"Enharinarlas, ponerlas a freir durante 5 minutos en aceite bien caliente."],
 }
 
 const title_x = <h1>{data.title_1}</h1>;
@@ -31,9 +30,8 @@ const subtitle_x = <h2>{data.title_2}</h2>;
 const paragraph_x = <p>{data.paragraph_1}</p>;
 const paragraph_2x = <p>{data.paragraph_2}</p>;
 const paragraph_3x = <p>{data.paragraph_3}</p>;
-const subtitle_x1 = <h4>{data.title_3}</h4>;
-const list_x = <ul>{data.list_x}</ul>;
-const list_x1 = <ul>{data.list_x1}</ul>;
+const paragraph_4x = <p>{data.paragraph_4}</p>;
+const paragraph_5x = <p>{data.paragraph_5}</p>;
 const paragraph_6x = <p>{data.paragraph_6}</p>;
 const paragraph_7x = <p>{data.paragraph_7}</p>;
 
@@ -44,12 +42,10 @@ const element = (
     {paragraph_x}
     {paragraph_2x}
     {paragraph_3x}
-    {subtitle_x1}
-    {list_x}
-    {list_x1}
+    {paragraph_4x}
+    {paragraph_5x}
     {paragraph_6x}
     {paragraph_7x}
-
   </div>
 );
 
