@@ -31,7 +31,5 @@ El estándar para JavaScript es ECMAScript (ECMA-262) y la especificación de la
 
 ##IMAGES
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
