@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ejercicio #10</title> 
+ <style>
+   p  {
+    font-family: verdana;
+    font-size: 13px;
+   }
+ </style>
+   <img src='pic1.jpeg' title= height=50% width='100px'> <h1>Recetas.com</h1>
+   <a href='https://www.recetasnestle.com.co/recetas' target='_blank'>Recetas Principales</a>
+   <a href='https://www.laylita.com/recetas/postres-latinos/' target='_blank'>Postres Latinos</a>
+
+</head>
+<body>
+  <div id="root"> </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+    const data = {
+      paragraph_1: "Bienvenido a nuestro sitio web sobre gastronomia latina, te invitamos a preparar nuestras recetas",
+      title_1: "Nuevas Recetas",
+      title_2: "**Arroz Criollo*",
+      paragraph_2: "Tiempo de preparación: 45 minutos - Número de Porciones 4",
+      title_3: "Ingredientes:",
+      list_x: "Salsa de Tomate",
+      list_1x: "2 cucharadas de aceite 14gr",
+      list_2x: "1 cebolla larga picada 45gr",
+      list_3x: "2 dientes de ajo finamente picado 3gr",
+      list_4x: "1 pimenton rojo picado en cuadritos 60gr",
+      list_5x: "1 taza de arroz blanco 225gr",
+      list_6x: "1 taza de maiz desgranado 79gr",
+      list_7x: "150gr de pechuga de pollo cocinado y desmechado",
+      list_8x: "Sal al gusto",
+      title_4: "Preparación:",
+      list_9x: "Calentar en una olla el aceite, sofreir la cebolla junto el ajo, el pimentin por 3 minutos.",
+      list_10x: "Adicionar el arroz y continua sofriendo para que se dore.",
+      list_11x: "Agregar el pollo, el maiz desgranado y las verduras.",
+      list_12x: "Mezclar todo, rectificar la sal y dejar cocinar hasta que seque.",
+      list_13x: "Bajar el fuego, tapar la olla y continuar la coccion por 25 minutos mas.",
+      paragraph_3: "Esta rica receta fue proporcionada por Maria Paula.",
+
+    };
+
+    const paragraph_x = <p>{data.paragraph_1}</p>;
+    const title_x = <h1>{data.title_1}</h1>;
+    const subtitle_x = <h2>{data.title_2}</h2>;
+    const paragraph_2x = <p>{data.paragraph_2}</p>;
+    const subtitle_1x = <h3>{data.title_3}</h3>;
+    const list_x = <b><li>{data.list_x}</li></b>;
+    const list_1x = <b><li>{data.list_1x}</li></b>;
+    const list_2x = <b><li>{data.list_2x}</li></b>;
+    const list_3x = <b><li>{data.list_3x}</li></b>;
+    const list_4x = <b><li>{data.list_4x}</li></b>;
+    const list_5x = <b><li>{data.list_5x}</li></b>;
+    const list_6x = <b><li>{data.list_6x}</li></b>;
+    const list_7x = <b><li>{data.list_7x}</li></b>;
+    const list_8x = <b><li>{data.list_8x}</li></b>;
+    const subtitle_2x = <h3>{data.title_4}</h3>;
+    const list_9x = <li>{data.list_9x}</li>;
+    const list_10x = <li>{data.list_10x}</li>;
+    const list_11x = <li>{data.list_11x}</li>;
+    const list_12x = <li>{data.list_12x}</li>;
+    const list_13x = <li>{data.list_13x}</li>;
+    const paragraph_3x = <p>{data.paragraph_3}</p>;
+
+
+    const element = (
+      <div>
+        {paragraph_x}
+        {title_x}
+        {subtitle_x}
+        {paragraph_2x}
+        {subtitle_1x}
+        {list_x}
+        {list_1x}
+        {list_2x}
+        {list_3x}
+        {list_4x}
+        {list_5x}
+        {list_6x}
+        {list_7x}
+        {list_8x}
+        {subtitle_2x}
+        {list_9x}
+        {list_10x}
+        {list_11x}
+        {list_12x}
+        {list_13x}    
+        {paragraph_3x}
+      </div>
+    );
+
+    ReactDOM.render(element,document.getElementById('root'));
+    </script>
+</body>
+</html>

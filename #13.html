@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ejercicio #13</title> 
+ <style>
+   video  {
+    position: fixed;
+    top: 80px;
+   }
+   h1 {
+    position: relative;
+    top: 10px;
+   }
+   p {
+    position: relative;
+    top: 20px;
+   }
+   h6 {
+    position: relative;
+    top: 470px;
+
+   }
+ </style> 
+       <video width="640" height="480" controls poster="video/imagen.jpg">
+      <source src="Seoul.mp4" type="video/mp4">
+        Tu navegador no soporta este elemento de video
+      </video>
+</head>
+<body>
+  <div id="root"> </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Titulo en Encabezado",
+  paragraph_1: "Este es un párrafo",
+  paragraph_2: "Derechos Reservados (pie)",
+}
+
+const title_x = <h1>{data.title_1}</h1>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_1x = <h6>{data.paragraph_2}</h6>;
+
+const element = (
+  <div>
+    {title_x}
+    {paragraph_x}
+    {paragraph_1x}
+  </div>
+);
+    ReactDOM.render(element,document.getElementById('root'));
+    </script>
+</body>
+</html>

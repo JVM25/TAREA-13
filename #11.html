@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ejercicio #11</title> 
+</head>
+<body>
+  <div id="root"> </div>
+
+    <h1>Registro en nuestra tienda</h1>
+      <form id="root">
+        <b>Nombre de Usuario</b>
+        <br>
+        <input
+            name="Nombre de Usuario"
+            placeholder="Ej: Luis"
+        />
+        <br><br>
+        <b>Email</b>
+        <br>
+        <input
+            name="userEmail"
+            placeholder="Ej: Luis@gmail.com"
+        />
+        <br><br>
+        <b>Edad</b>
+        <br>
+        <input
+            name="edad"
+            placeholder="Ej: 22"
+        />
+        <br><br>
+        <b>Género</b>
+        <br>
+        <input type="radio" name="genero" checked> Masculino
+        <br>
+        <input type="radio" name="genero" checked> Femenino
+        <br><br>
+        <b>Recomendado por:</b>
+        <br>
+        <select name="Google">
+          <option value="">Google</option>
+          <option value="1">Firefox</option>
+          <option value="2">Mozilla</option>
+        </select>
+        <br><br>
+        <b>Comentarios:</b>
+        <br>
+        <textarea name="Comentarios" rows="4" cols="25"></textarea>
+        <br><br>
+        <b>Acepto terminos y condiciones</b>
+        <br>
+        <input type="checkbox">
+        <br><br>
+
+        <button class="" type="submit">Enviar</button>
+    </form>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+
+      ReactDOM.render(element,document.getElementById('root'));
+    </script>
+</body>
+</html>
