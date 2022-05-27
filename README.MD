@@ -31,4 +31,4 @@ El estándar para JavaScript es ECMAScript (ECMA-262) y la especificación de la
 
 ##IMAGES
 
-(https://www.npmjs.org/browse/keyword/markdown-it-plugin)
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
